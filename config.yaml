@@ -1,0 +1,45 @@
+name: "minipro"
+#mode: "release"
+mode: "dev"
+port: 8080
+version: "v0.1.0"
+start_time: "2022-10-10"
+machine_id: 1
+cropid: ""
+corpsecret: "kyQNy-JaZh0c4vbo-XTJ8qRfNCAIYiCRM8y-KgqW2sA"
+corpsecretWeb: "MT4_TyoU7iiA5GExU_T-Tm6DTvvyeQYIKOA_ftVMrUE"
+corpsecretConfirm: "MApU9wrJKk_dB0NK8DqGVeW0sMThbvr84xeXBEoP8eE"
+msgtype: "text"
+agentid: 1000020
+# 流程开始前网办数据中的最后一个流水号
+last_sequence: 24197227
+authID: "32106500039"
+# filename为导入学生信息的excel文件所在的绝对路径，indexname为导入的学生学号的列名（请和excel文件列名保持一致！）
+filename: "xxxxx.xlsx"
+indexname: "学号"
+staySchoolBackTime: "2022-10-10"
+
+
+#向返校码方请求token所需密钥
+clientid: "377673220808211939"
+secretid: "56ZpxLr5Fom1SBPw15V51v01X96Q5u26"
+
+auth:
+  jwt_expire: 8760
+
+log:
+  level: "debug"
+  filename: "web_log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "shmily323"
+  dbname: "minipro"
+  max_conns: 200
+  max_idle_conns: 50
+
